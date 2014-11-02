@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by mad-d</title>
+    <link rel="stylesheet" href="css/widget.css" media="screen" type="text/css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+<body>
+	<div class="background-image">
+	<ul id="myaccordian">
+		<li class="day_panel">
+			<div class="top">
+				<p>test example font color test example font color test example font color test example font color test example font color test example font color test example font color test example font color test example font color test example font color </p>
+<!--
+					<div class="day_name">Today</div>
+					<div class="day_icon"></div>
+					<div class="day_text_wrapper">
+						<p class="day_text">weather details</p>
+					</div>
+					<div class="temperature_range">
+						<div class="ranger">
+						<span class="temperature_min">{{temperature_min}}&deg;</span>  
+						<span class="temperature_max">{{temperature_max}}&deg;</span>
+						</div>
+					</div>
+					 <div class="button">
+						<span class="plus">+</span>
+						<span class="minus">-</span>
+					 </div>
+-->
+			</div>
+			<div class="panel">
+				<div class="temp_panel">
+					<p>test example font color test example font color test example font color test example font color test example font color test example font color test example font color test example font color test example font color test example font color </p>
+	<!--
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+	-->
+				</div>
+				<div class="sundirection_highlow">
+					<p>test example font color test example font color test example font color test example font color test example font color test example font color test example font color test example font color test example font color test example font color </p>
+	<!--
+					<span class="title">HIGH</span>
+					<span class="value">00</span>
+					<span class="title">LOW</span>
+					<span class="value">00</span>
+					<span class="title">SUNRISE</span>
+					<span class="value">00</span>
+					<span class="title">SUNSET</span>
+					<span class="value">00</span>
+	-->
+				</div>
+				<div class="moredetails">
+					<p>test example font color test example font color test example font color test example font color test example font color test example font color test example font color test example font color test example font color test example font color </p>
+	<!--
+					<span class="summary"></span>
+					<span class="title">WIND</span>
+					<span class="value">00</span>
+					<span class="title">HUMIDITY</span>
+					<span class="value">00</span>
+					<span class="title">VISIBILITY</span>
+					<span class="value">00</span>
+					<span class="title">PRESSURE</span>
+					<span class="value">00</span>
+	-->
+				</div>
+			</div>
+		</li>
+		<li class="day_panel">
+			<div class="top">
+<!--
+					<div class="day_name">Today</div>
+					<div class="day_icon"></div>
+					<div class="day_text_wrapper">
+						<p class="day_text">weather details</p>
+					</div>
+					<div class="temperature_range">
+						<div class="ranger">
+						<span class="temperature_min">{{temperature_min}}&deg;</span>  
+						<span class="temperature_max">{{temperature_max}}&deg;</span>
+						</div>
+					</div>
+					 <div class="button">
+						<span class="plus">+</span>
+						<span class="minus">-</span>
+					 </div>
+-->
+			</div>
+			<div class="panel">
+				<div class="temp_panel">
+	<!--
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+	-->
+				</div>
+				<div class="sundirection_highlow">
+	<!--
+					<span class="title">HIGH</span>
+					<span class="value">00</span>
+					<span class="title">LOW</span>
+					<span class="value">00</span>
+					<span class="title">SUNRISE</span>
+					<span class="value">00</span>
+					<span class="title">SUNSET</span>
+					<span class="value">00</span>
+	-->
+				</div>
+				<div class="moredetails">
+	<!--
+					<span class="summary"></span>
+					<span class="title">WIND</span>
+					<span class="value">00</span>
+					<span class="title">HUMIDITY</span>
+					<span class="value">00</span>
+					<span class="title">VISIBILITY</span>
+					<span class="value">00</span>
+					<span class="title">PRESSURE</span>
+					<span class="value">00</span>
+	-->
+				</div>
+			</div>
+		</li>
+		<li class="day_panel">
+			<div class="top">
+<!--
+					<div class="day_name">Today</div>
+					<div class="day_icon"></div>
+					<div class="day_text_wrapper">
+						<p class="day_text">weather details</p>
+					</div>
+					<div class="temperature_range">
+						<div class="ranger">
+						<span class="temperature_min">{{temperature_min}}&deg;</span>  
+						<span class="temperature_max">{{temperature_max}}&deg;</span>
+						</div>
+					</div>
+					 <div class="button">
+						<span class="plus">+</span>
+						<span class="minus">-</span>
+					 </div>
+-->
+			</div>
+			<div class="panel">
+				<div class="temp_panel">
+	<!--
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+	-->
+				</div>
+				<div class="sundirection_highlow">
+	<!--
+					<span class="title">HIGH</span>
+					<span class="value">00</span>
+					<span class="title">LOW</span>
+					<span class="value">00</span>
+					<span class="title">SUNRISE</span>
+					<span class="value">00</span>
+					<span class="title">SUNSET</span>
+					<span class="value">00</span>
+	-->
+				</div>
+				<div class="moredetails">
+	<!--
+					<span class="summary"></span>
+					<span class="title">WIND</span>
+					<span class="value">00</span>
+					<span class="title">HUMIDITY</span>
+					<span class="value">00</span>
+					<span class="title">VISIBILITY</span>
+					<span class="value">00</span>
+					<span class="title">PRESSURE</span>
+					<span class="value">00</span>
+	-->
+				</div>
+			</div>
+		</li>
+		<li class="day_panel">
+			<div class="top">
+<!--
+					<div class="day_name">Today</div>
+					<div class="day_icon"></div>
+					<div class="day_text_wrapper">
+						<p class="day_text">weather details</p>
+					</div>
+					<div class="temperature_range">
+						<div class="ranger">
+						<span class="temperature_min">{{temperature_min}}&deg;</span>  
+						<span class="temperature_max">{{temperature_max}}&deg;</span>
+						</div>
+					</div>
+					 <div class="button">
+						<span class="plus">+</span>
+						<span class="minus">-</span>
+					 </div>
+-->
+			</div>
+			<div class="panel">
+				<div class="temp_panel">
+	<!--
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+	-->
+				</div>
+				<div class="sundirection_highlow">
+	<!--
+					<span class="title">HIGH</span>
+					<span class="value">00</span>
+					<span class="title">LOW</span>
+					<span class="value">00</span>
+					<span class="title">SUNRISE</span>
+					<span class="value">00</span>
+					<span class="title">SUNSET</span>
+					<span class="value">00</span>
+	-->
+				</div>
+				<div class="moredetails">
+	<!--
+					<span class="summary"></span>
+					<span class="title">WIND</span>
+					<span class="value">00</span>
+					<span class="title">HUMIDITY</span>
+					<span class="value">00</span>
+					<span class="title">VISIBILITY</span>
+					<span class="value">00</span>
+					<span class="title">PRESSURE</span>
+					<span class="value">00</span>
+	-->
+				</div>
+			</div>
+		</li>
+		<li class="day_panel">
+			<div class="top">
+<!--
+					<div class="day_name">Today</div>
+					<div class="day_icon"></div>
+					<div class="day_text_wrapper">
+						<p class="day_text">weather details</p>
+					</div>
+					<div class="temperature_range">
+						<div class="ranger">
+						<span class="temperature_min">{{temperature_min}}&deg;</span>  
+						<span class="temperature_max">{{temperature_max}}&deg;</span>
+						</div>
+					</div>
+					 <div class="button">
+						<span class="plus">+</span>
+						<span class="minus">-</span>
+					 </div>
+-->
+			</div>
+			<div class="panel">
+				<div class="temp_panel">
+	<!--
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+					<div class="hour">
+						<span class="hourText"></span>
+						<span class="tempText"></span>
+					</div>
+	-->
+				</div>
+				<div class="sundirection_highlow">
+	<!--
+					<span class="title">HIGH</span>
+					<span class="value">00</span>
+					<span class="title">LOW</span>
+					<span class="value">00</span>
+					<span class="title">SUNRISE</span>
+					<span class="value">00</span>
+					<span class="title">SUNSET</span>
+					<span class="value">00</span>
+	-->
+				</div>
+				<div class="moredetails">
+	<!--
+					<span class="summary"></span>
+					<span class="title">WIND</span>
+					<span class="value">00</span>
+					<span class="title">HUMIDITY</span>
+					<span class="value">00</span>
+					<span class="title">VISIBILITY</span>
+					<span class="value">00</span>
+					<span class="title">PRESSURE</span>
+					<span class="value">00</span>
+	-->
+				</div>
+			</div>
+		</li>
+				
+	</ul>
+		</div>
+	
+	<script src="js/index.js"></script>
+	<script type="text/javascript" language="javascript">
+		$("#myaccordian").accordion();
+	</script>
+</body>
+</html>
+
+
