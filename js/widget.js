@@ -109,6 +109,7 @@ function insertValues(detailDiv)
 		$('.moredetails .sundirection .sunrise .value').text(detailDiv.attr("ozone"));
 		$('.moredetails .sundirection .sunset .value').text(detailDiv.attr("preci"));
 	
+	
 	$('.day_icon img').attr("src",'img/'+detailDiv.attr("icon")+'.svg');
 	
 	$('.day_name').text(detailDiv.attr("day"));
