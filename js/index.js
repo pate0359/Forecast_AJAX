@@ -22,18 +22,6 @@ document.addEventListener("DOMContentLoaded", function(){
       //call the function in My widget script to load the JSON and build the widget
       buildWidget(".mywidget");
       console.log("both scripts loaded");
-		
-		$(document).ready(function(){
-	$("#accordian h3").click(function(){
-		//slide up all the link lists
-		$("#accordian ul ul").slideUp();
-		//slide down the link list below the h3 clicked - only if its closed
-		if(!$(this).next().is(":visible"))
-		{
-			$(this).next().slideDown();
-		}
-	})
-})
     }
   });
   document.querySelector("head").appendChild(jq);
@@ -46,18 +34,6 @@ document.addEventListener("DOMContentLoaded", function(){
       //call the function in My widget script to load the JSON and build the widget
       buildWidget(".mywidget");
       console.log("both scripts loaded");
-		
-		$(document).ready(function(){
-	$("#accordian h3").click(function(){
-		//slide up all the link lists
-		$("#accordian ul ul").slideUp();
-		//slide down the link list below the h3 clicked - only if its closed
-		if(!$(this).next().is(":visible"))
-		{
-			$(this).next().slideDown();
-		}
-	})
-})
     }
   });
   document.querySelector("head").appendChild(script);
