@@ -37,5 +37,5 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   });
   document.querySelector("head").appendChild(script);
-  script.setAttribute("src","https://pate0359.github.io/widgetForecast/js/widget.js");
+  script.setAttribute("src","js/widget.js");
 });
