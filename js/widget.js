@@ -63,9 +63,9 @@ function gotData(data) {
 		$('#'+i+'').attr("visibility",hour.visibility);
 		$('#'+i+'').attr("wind",hour.windSpeed);
 		$('#'+i+'').attr("dew",hour.dewPoint);
-		$('#'+i+'').attr("summary",hour.summary);
+		$('#'+i+'').attr("pressure",hour.pressure);
 		$('#'+i+'').attr("ozone",hour.ozone);
-		$('#'+i+'').attr("preci",hour.precipIntensity);
+		$('#'+i+'').attr("preci",hour.precipIntensity.toPrecision(2));
 				
 		var date = new Date(hour.time * 1000);
 		$('#'+i+'').attr("day",weekday[date.getDay()]);
@@ -105,9 +105,11 @@ function insertValues(detailDiv)
 		$('.sundirection_highlow .sundirection .sunset .value').text(detailDiv.attr("wind"));
 		
 		$('.moredetails .highlow .high .value').text(detailDiv.attr("dew"));
-		$('.moredetails .highlow .low .value').text(detailDiv.attr("summary"));
+		$('.moredetails .highlow .low .value').text(detailDiv.attr("pressure"));
 		$('.moredetails .sundirection .sunrise .value').text(detailDiv.attr("ozone"));
 		$('.moredetails .sundirection .sunset .value').text(detailDiv.attr("preci"));
+	
+	$('.day_icon img').attr("src",'img/'+detailDiv.attr("icon")+'.svg');
 	
 	$('.day_name').text(detailDiv.attr("day"));
 	$('.day_text_wrapper .day_text').text(detailDiv.attr("summary"));
