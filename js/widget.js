@@ -65,7 +65,7 @@ function gotData(data) {
 		$('#'+i+'').attr("dew",hour.dewPoint);
 		$('#'+i+'').attr("pressure",hour.pressure);
 		$('#'+i+'').attr("ozone",hour.ozone);
-		$('#'+i+'').attr("preci",hour.precipIntensity.toPrecision(2));
+		$('#'+i+'').attr("cloud",hour.cloudCover);
 				
 		var date = new Date(hour.time * 1000);
 		$('#'+i+'').attr("day",weekday[date.getDay()]);
@@ -99,15 +99,15 @@ function gotData(data) {
 function insertValues(detailDiv)
 {
 	// Add values
-		$('.sundirection_highlow .highlow .high .value').text(detailDiv.attr("feels_like"));
-		$('.sundirection_highlow .highlow .low .value').text(detailDiv.attr("humidity"));
-		$('.sundirection_highlow .sundirection .sunrise .value').text(detailDiv.attr("visibility"));
-		$('.sundirection_highlow .sundirection .sunset .value').text(detailDiv.attr("wind"));
+		$('.sundirection_highlow .highlow .high .value').text(detailDiv.attr("feels_like")+'\u00B0');
+		$('.sundirection_highlow .highlow .low .value').text(detailDiv.attr("humidity") *100+'%');
+		$('.sundirection_highlow .sundirection .sunrise .value').text(detailDiv.attr("visibility")+' m');
+		$('.sundirection_highlow .sundirection .sunset .value').text(detailDiv.attr("wind")+' kmph');
 		
 		$('.moredetails .highlow .high .value').text(detailDiv.attr("dew"));
-		$('.moredetails .highlow .low .value').text(detailDiv.attr("pressure"));
-		$('.moredetails .sundirection .sunrise .value').text(detailDiv.attr("ozone"));
-		$('.moredetails .sundirection .sunset .value').text(detailDiv.attr("preci"));
+		$('.moredetails .highlow .low .value').text(detailDiv.attr("pressure")+' KPa');
+		$('.moredetails .sundirection .sunrise .value').text(detailDiv.attr("ozone")+' DU');
+		$('.moredetails .sundirection .sunset .value').text((detailDiv.attr("cloud") * 100).toPrecision(3)+'%');
 	
 	
 	$('.day_icon img').attr("src",'img/'+detailDiv.attr("icon")+'.svg');

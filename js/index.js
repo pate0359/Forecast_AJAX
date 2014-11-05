@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   });
   document.querySelector("head").appendChild(jq);
-  jq.setAttribute("src","//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js");
+  jq.setAttribute("src","http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js");
 
   var script = document.createElement("script");
   script.addEventListener("load", function(){
